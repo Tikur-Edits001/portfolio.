@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tikur — Anime Video Editor</title>
+<meta name="description" content="Tikur — video editor specializing in anime content, editing, and motion graphics.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ================= NAV ================= -->
+<nav class="navbar" id="navbar">
+  <a href="#home" class="brand">TIKUR<span class="brand-dot">.</span></a>
+
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+
+  <div class="nav-links" id="navLinks">
+    <a href="#home" class="sticker sticker-sm nav-link" data-nav>Home</a>
+    <a href="#about" class="sticker sticker-sm nav-link" data-nav>About Me</a>
+    <a href="#portfolio" class="sticker sticker-sm nav-link" data-nav>Portfolio</a>
+    <a href="#contact" class="sticker sticker-sm nav-link" data-nav>Contact</a>
+  </div>
+</nav>
+
+<!-- ================= HERO / HOME ================= -->
+<header class="hero" id="home">
+  <div class="hero-media">
+    <video
+      class="hero-video"
+      autoplay
+      muted
+      loop
+      playsinline
+      poster="assets/hero-poster.jpg"
+      aria-label="Animated homepage clip">
+      <source src="assets/hero.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <div class="hero-fade"></div>
+
+  <div class="hero-caption">
+    <p class="eyebrow">anime editor &middot; motion graphics</p>
+    <a href="#portfolio" class="sticker hero-cta">
+      see my work <span class="arrow">↓</span>
+    </a>
+  </div>
+</header>
+
+<main>
+
+  <!-- ================= ABOUT ================= -->
+  <section class="section" id="about">
+    <div class="section-inner about-grid">
+
+      <div class="about-media reveal">
+        <div class="poly-frame">
+          <img src="assets/hero-poster.jpg" alt="Tikur avatar" class="avatar-img">
+        </div>
+        <div class="stat-chip stat-chip--float">
+          <span class="stat-num">6</span>
+          <span class="stat-label">months<br>editing</span>
+        </div>
+      </div>
+
+      <div class="about-copy reveal">
+        <p class="kicker">about me</p>
+        <h2 class="section-title">Hey, I'm Tikur.</h2>
+
+        <p class="lead">
+          I'm a video editor specializing in anime content and creative video
+          editing. I've been on my editing journey for around
+          <strong>6 months</strong>, and I'm still constantly learning and
+          improving.
+        </p>
+
+        <p>
+          During this time I've developed a solid understanding of
+          anime-focused editing, storytelling, pacing, and visual
+          presentation. I've been watching anime since I was a kid, so being
+          able to combine something I've always enjoyed with editing is
+          something I genuinely enjoy — it's the niche I'm most passionate
+          about, and there's nothing more exciting to me than turning anime
+          footage into engaging content.
+        </p>
+
+        <p>
+          I'm always looking to improve my skills, experiment with new
+          techniques, and create better work with every project.
+        </p>
+
+        <div class="about-meta">
+          <div class="meta-card">
+            <h3>Software</h3>
+            <ul class="tag-list">
+              <li class="tag">Adobe Premiere Pro</li>
+              <li class="tag">Adobe After Effects</li>
+            </ul>
+          </div>
+
+          <div class="meta-card">
+            <h3>Experience</h3>
+            <ul class="plain-list">
+              <li>~6 months of editing experience</li>
+              <li>Specializing in anime content editing</li>
+              <li>Continuously learning &amp; improving</li>
+            </ul>
+          </div>
+
+          <div class="meta-card">
+            <h3>Quick facts</h3>
+            <ul class="plain-list">
+              <li>Age: 17</li>
+              <li>Based on anime edits &amp; motion graphics</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="looking-for sticker">
+          <h3>Currently looking for</h3>
+          <p>
+            I'm looking to work with clients and creators interested in a
+            <strong>long-term working relationship</strong> — consistent,
+            high-quality editing with an editor you can keep coming back to.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= PORTFOLIO ================= -->
+  <section class="section section--alt" id="portfolio">
+    <div class="section-inner">
+      <p class="kicker kicker--center">portfolio</p>
+      <h2 class="section-title section-title--center reveal">Recent edits</h2>
+      <p class="section-sub reveal">
+        A few projects to start — more get added here over time.
+      </p>
+
+      <div class="portfolio-grid" id="portfolioGrid">
+        <!-- cards injected by script.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CONTACT ================= -->
+  <section class="section" id="contact">
+    <div class="section-inner">
+      <div class="contact-card sticker reveal">
+        <div>
+          <p class="kicker">contact</p>
+          <h2 class="section-title">Let's work together</h2>
+          <p class="lead">
+            Have a project in mind, or want to talk about a long-term
+            collaboration? Reach out below.
+          </p>
+        </div>
+
+        <ul class="contact-list">
+          <li class="contact-row">
+            <span class="contact-label">Email</span>
+            <a href="mailto:tikuredits@gmail.com" class="contact-value">tikuredits@gmail.com</a>
+          </li>
+          <li class="contact-row">
+            <span class="contact-label">Discord</span>
+            <span class="contact-value contact-value--stack">
+              <a href="https://discord.com/users/1293165415375175680" target="_blank" rel="noopener noreferrer">chanku0694</a>
+              <a href="https://discord.com/users/1317807047911149599" target="_blank" rel="noopener noreferrer">tikur_op</a>
+            </span>
+          </li>
+          <li class="contact-row">
+            <span class="contact-label">Instagram</span>
+            <a href="https://www.instagram.com/tikur_editz_/" class="contact-value" target="_blank" rel="noopener noreferrer">@tikur_editz_</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <div class="footer-inner">
+    <a href="#home" class="brand brand--footer">TIKUR<span class="brand-dot">.</span></a>
+    <nav class="footer-nav">
+      <a href="#home">Home</a>
+      <a href="#about">About Me</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a href="#home" class="sticker sticker-sm back-top">back to top ↑</a>
+  </div>
+  <p class="footer-note">Built by Tikur — anime editing &amp; motion graphics.</p>
+</footer>
+
+<!-- ================= LIGHTBOX ================= -->
+<div class="lightbox" id="lightbox">
+  <div class="lightbox-backdrop" id="lightboxBackdrop"></div>
+  <div class="lightbox-inner">
+    <button class="lightbox-close sticker sticker-sm" id="lightboxClose" aria-label="Close video">close ✕</button>
+    <div class="lightbox-media" id="lightboxMedia"></div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
